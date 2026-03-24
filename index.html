@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Public API Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>🌐 Public API Playground</h1>
+        <p>A modern collection of public APIs to explore and interact with.</p>
+    </header>
+
+    <main class="container">
+        <!-- Card 1: Dog API -->
+        <article class="card" id="dog-card">
+            <div class="card-header">
+                <h2>🐶 Dog Finder</h2>
+            </div>
+            <div class="card-content" id="dog-content">
+                <!-- Data injected here -->
+            </div>
+            <div class="card-actions">
+                <button id="btn-dog" class="btn primary">Get Dog</button>
+                <button id="btn-dog-copy" class="btn secondary hidden" aria-label="Copy Image URL">Copy URL</button>
+            </div>
+        </article>
+
+        <!-- Card 2: Joke Generator -->
+        <article class="card" id="joke-card">
+            <div class="card-header">
+                <h2>😂 Joke Generator</h2>
+            </div>
+            <div class="card-content" id="joke-content">
+                <!-- Data injected here -->
+            </div>
+            <div class="card-actions">
+                <button id="btn-joke" class="btn primary">Get Joke</button>
+            </div>
+        </article>
+
+        <!-- Card 3: Random User -->
+        <article class="card" id="user-card">
+            <div class="card-header">
+                <h2>👤 Random User</h2>
+            </div>
+            <div class="card-content" id="user-content">
+                <!-- Data injected here -->
+            </div>
+            <div class="card-actions">
+                <button id="btn-user" class="btn primary">Get User</button>
+            </div>
+        </article>
+
+        <!-- Card 4: JSONPlaceholder Posts -->
+        <article class="card" id="posts-card">
+            <div class="card-header">
+                <h2>📦 Latest Posts</h2>
+            </div>
+            <div class="card-content " id="posts-content">
+                <!-- Data injected here -->
+            </div>
+            <div class="card-actions">
+                <button id="btn-posts" class="btn primary">Get Posts</button>
+            </div>
+        </article>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
